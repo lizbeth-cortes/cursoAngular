@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>
+    {{titulo}}
+  </h1>
+  <!-- Invoca al componente 'formulario' y escucha el evento 'resultadoSuma' -->
+  <app-formulario (resultadoSuma)="procesarResultado($event)"></app-formulario>
+  
+  <!-- Invoca al componente 'resultado' y pasa el valor de 'resultadoPadre' -->
+  <app-resultado [resultadoHijo]="resultadoPadre"></app-resultado>
+</div>
